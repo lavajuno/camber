@@ -1,0 +1,1 @@
+javadoc.exe -d ./docs org.jmeifert.camber.data org.jmeifert.camber.file org.jmeifert.camber.main org.jmeifert.camber.net org.jmeifert.camber.security org.jmeifert.camber.util

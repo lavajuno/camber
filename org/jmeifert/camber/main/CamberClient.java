@@ -11,7 +11,7 @@ public class CamberClient {
     public static final String SPLASH_MESSAGE = "" +
             "x----------------------------------------x\n" +
             "| Welcome to Camber.                     |\n" +
-            "| You're using version 0.0 (Testing)     |\n" +
+            "| You're using version 0.0.0 (Testing)   |\n" +
             "| For info and updates, please visit     |\n" +
             "| https://github.com/lavajuno/camber     |\n" +
             "x----------------------------------------x\n";
