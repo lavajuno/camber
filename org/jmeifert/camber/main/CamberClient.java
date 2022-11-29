@@ -63,6 +63,8 @@ public class CamberClient {
         String userOption;
         String userMessage;
 
+        System.out.println("Using hostname '" + hostname + "'.");
+        System.out.println("Using port " + port + ".\n");
         System.out.println("Enter group name (leave blank for default - '" + DEFAULT_GROUP + "'):");
         userOption = scanner.nextLine();
         if(!userOption.equals("")) {
@@ -97,7 +99,7 @@ public class CamberClient {
             System.out.println("Enter your message below. (Type '/help' for help)");
             userMessage = scanner.nextLine();
             if(userMessage.equals("/help")) {
-                System.out.println("-- Help:" +
+                System.out.println("-- Help:\n" +
                         "-- Press ENTER at the message prompt to refresh recent messages.\n" +
                         "-- '/lm' - List messages from all topics.\n" +
                         "-- '/lt' - List active topics.\n" +
@@ -125,7 +127,6 @@ public class CamberClient {
                     c.close();
                 } catch(IOException e) {
                     System.err.println("-- Failed to disconnect gracefully. Forcing disconnect...");
-                    c = null;
                 }
                 System.out.println("-- Disconnected.");
                 return;
