@@ -17,9 +17,9 @@ Camber's default port is 7450, and the default hostname is 127.0.0.1 (localhost)
 Camber is a work-in-progress. Currently, communication between server and client is encrypted, but the server's 
 identity is not persistent and thus cannot be fully verified. THIS WILL BE FIXED IN THE NEAR FUTURE.
 #### Does this mean I'm vulnerable to man-in-the-middle attacks if I use Camber right now?
-Possibly. However, for one to work, someone on your local network has to dislike you a LOT (enough to go research some 
-random college project that you found and write a man-in-the-middle attack against it). If this sounds like you, you 
-may want to open an honest conversation with them about why this is the case, or wait until it is updated.
+>Possibly. However, for one to work, someone on your local network has to dislike you a LOT (enough to go research some 
+>random college project that you found and write a man-in-the-middle attack against it). If this sounds like you, you 
+>may want to open an honest conversation with them about why this is the case, or wait until it is updated.
 
 ## roadmap
 At this point, it's a little early to start pinning down exact functionality, however I will list some nice-to-haves
