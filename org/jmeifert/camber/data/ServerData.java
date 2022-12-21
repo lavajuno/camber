@@ -33,6 +33,7 @@ public class ServerData {
                 throw new IllegalArgumentException("Group already exists!");
             }
         }
+        groups.add(new Group(name, password));
     }
 
     /**

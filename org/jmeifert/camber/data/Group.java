@@ -47,11 +47,18 @@ public class Group {
      * @return Recent messages tagged with specified topic
      */
     public String getMessages(String topic) {
-        StringBuilder output = new StringBuilder();
-        for (Message i : messages) {
+        Vector<String> msgsInTopic = new Vector<>();
+        for (Message i : messages) { // take only this topic's messages
             if (i.getTopic().equals(topic)) {
-                output.append(i).append("\n");
+                msgsInTopic.add(i.toString());
             }
+        }
+        while(msgsInTopic.size() > MAX_MESSAGES_TO_OUTPUT) { // trim extra messages
+            msgsInTopic.remove(0);
+        }
+        StringBuilder output = new StringBuilder();
+        for (String i : msgsInTopic) { // format nicely
+            output.append(i).append("\n");
         }
         return output.toString();
     }
@@ -60,14 +67,16 @@ public class Group {
      * @return All recent messages from the group
      */
     public String getMessages() {
+        Vector<String> msgsInTopic = new Vector<>();
+        for(Message i : messages) { // take all topics' messages
+            msgsInTopic.add(i.toString());
+        }
+        while(msgsInTopic.size() > MAX_MESSAGES_TO_OUTPUT) { // trim extra messages
+            msgsInTopic.remove(0);
+        }
         StringBuilder output = new StringBuilder();
-        int outputCount = 0;
-        for (Message i : messages) {
+        for (String i : msgsInTopic) { // format nicely
             output.append(i).append("\n");
-            outputCount++;
-            if(outputCount > MAX_MESSAGES_TO_OUTPUT) {
-                return output.toString();
-            }
         }
         return output.toString();
     }

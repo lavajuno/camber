@@ -17,9 +17,9 @@ Camber's default port is 7450, and the default hostname is 127.0.0.1 (localhost)
 Camber is a work-in-progress. Currently, communication between server and client is encrypted, but the server's 
 identity is not persistent and thus cannot be fully verified. THIS WILL BE FIXED IN THE NEAR FUTURE.
 #### Does this mean I'm vulnerable to man-in-the-middle attacks if I use Camber right now?
-Possibly. However, for one to work, someone on your local network has to dislike you a LOT (enough to go research some 
-random college project that you found and write a man-in-the-middle attack against it). If this sounds like you, you 
-may want to open an honest conversation with them about why this is the case, or wait until it is updated.
+>Possibly. However, for one to work, someone on your local network has to dislike you a LOT (enough to go research some 
+>random college project that you found and write a man-in-the-middle attack against it). If this sounds like you, you 
+>may want to open an honest conversation with them about why this is the case, or wait until it is updated.
 
 ## roadmap
 At this point, it's a little early to start pinning down exact functionality, however I will list some nice-to-haves
@@ -34,4 +34,16 @@ Saving of groups and port by server.
  - Ability to send media - Images, audio, etc. with a reasonable size limit
 
 ## licensing
-Camber is (and always will be) free and open-source software. It is released under the GNU General Public License v3.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+

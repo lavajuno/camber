@@ -94,8 +94,8 @@ public class CamberClient {
         }
 
         // Connected - Main Menu
+        showMessages(c);
         while(true) {
-            showMessages(c);
             System.out.println("Enter your message below. (Type '/help' for help)");
             userMessage = scanner.nextLine();
             if(userMessage.equals("/help")) {

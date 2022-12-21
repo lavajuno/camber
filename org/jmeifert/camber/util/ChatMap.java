@@ -20,10 +20,10 @@ public class ChatMap {
     public static final int INACTIVITY_TIMEOUT = 300 * 1000;
 
     // Max message length (characters)
-    public static final int MAX_MESSAGE_LENGTH = 400;
+    public static final int MAX_MESSAGE_LENGTH = 500;
 
     // Max name length (characters)
-    public static final int MAX_NAME_LENGTH = 40;
+    public static final int MAX_NAME_LENGTH = 50;
 
     // RSA key size (bits)
     public static final int RSA_KEY_SIZE = 2048;
